@@ -4,7 +4,7 @@ import (
 	"strings"
 )
 
-// KMPStringSearch Return index list if target string contain want string
+// KMPStringSearch returns a list of starting indexs for a needle found in a haystack
 func KMPStringSearch(haystack string, needle string) []int {
 	ret := []int{}
 	m, n := len(needle), len(haystack)
