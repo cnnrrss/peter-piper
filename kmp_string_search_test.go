@@ -61,7 +61,7 @@ var tcs = []struct {
 }
 
 // TestKMP executges unit test cases for the KMP function
-func TestKMP(t *testing.T) {
+func TestKMPStringSearch(t *testing.T) {
 	for _, tc := range tcs {
 		t.Logf("~ %v ~\n", tc)
 		actual := KMPStringSearch(tc.textToSearch, tc.subText)
